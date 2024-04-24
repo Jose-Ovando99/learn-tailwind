@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { React } from 'react'
 import './App.css'
+import Header from './components/Header';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className='bg-red-500'>Hello world! this is my first jsx with tailwind + vite </h1>
-    </>
+    <div className='bg-slate-100'>
+      <Header />
+    </div>
   )
 }
 
