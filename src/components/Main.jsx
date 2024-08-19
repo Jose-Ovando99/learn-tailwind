@@ -1,14 +1,13 @@
 import React from 'react';
-import perfil1 from '../assets/perfil-1.png';
 
-function Main({ alt, title, caption, autor, fecha }) {
+function Main({ alt, title, caption, autor, fecha, imagen }) {
   return (
     <main className='p-4'>
-      <article className='overflow-hidden rounded bg-white shadow'>
+      <article className='overflow-hidden rounded bg-white shadow dark:bg-slate-600'>
         <div className='h-52'>
           <img 
           className='h-full w-full object-contain'
-          src={perfil1} alt={alt} />
+          src={imagen} alt={alt} />
           </div>
         <div className='p-5 space-y-3'>
           <h3 className='text-sm font-semibold text-sky-500'>{title}</h3>
